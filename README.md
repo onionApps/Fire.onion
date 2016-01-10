@@ -1,9 +1,14 @@
 # Fire.onion (Browser + Tor for Android)
 
-https://play.google.com/store/apps/details?id=onion.fire
+![](https://raw.githubusercontent.com/OnionApps/Fire.onion/master/gfx/fgx.jpg)
 
 Fire.onion lets you browse the web anonymously by routing all traffic over a series of randomly-selected proxy servers using a technique called onion routing. All data is encrypted multiple times, analogous to the layers of an onion, so that each proxy can only decrypt a single layer. Addresses are encrypted together with the data to make sure that each proxy only knows the address of it's immediate successor and predecessor, but not the entire route.
 
+https://play.google.com/store/apps/details?id=onion.fire
+
+http://onionapps.github.io/Fire.onion/
+
+## Features
 - Webbrowser + Tor bundle for Android
 - Completely self-contained
 - No other apps needed
