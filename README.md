@@ -4,7 +4,8 @@ https://play.google.com/store/apps/details?id=onion.fire
 
 ## Features
 - Webbrowser + Tor bundle for Android
-- No external dependencies / no other apps needed
+- Completely self-contained
+- No other apps needed
 - Anonymous web browsing
 - Access to .onion sites
 - Privacy mode always on
