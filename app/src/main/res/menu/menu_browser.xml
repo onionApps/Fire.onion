@@ -1,0 +1,109 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    tools:context=".BrowserActivity">
+
+   <!-- <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />-->
+
+
+<!--
+    <item
+        android:id="@+id/action_progress"
+        android:title="Progress"
+        android:showAsAction="ifRoom"
+        android:actionLayout="@layout/spinner"  />
+-->
+
+
+    <item
+        android:title=""
+        android:id="@+id/menu_pick_color"
+        android:actionLayout="@layout/menu"/>
+
+
+<!--
+
+    <item android:id="@+id/action_copy"
+        android:title="Copy"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_paste"
+        android:title="Paste"
+        android:orderInCategory="100" app:showAsAction="never" />
+-->
+
+
+
+    <item android:id="@+id/action_reload"
+        android:title="Reload"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_stop"
+        android:title="Stop"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_back"
+        android:title="Back"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_forward"
+        android:title="Forward"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_home"
+        android:title="Home"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+
+
+
+    <item android:id="@+id/action_tabs"
+        android:title="Tabs"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+<!--
+    <item android:id="@+id/action_tab_new"
+        android:title="New Tab"
+        android:orderInCategory="100" app:showAsAction="never" />
+-->
+
+
+    <item android:id="@+id/action_bookmark_list"
+        android:title="Bookmarks"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_bookmark_add"
+        android:title="Add bookmark"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_download_list"
+        android:title="Downloads"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_settings"
+        android:title="Settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <!--
+    <item android:id="@+id/action_downloads"
+        android:title="Downloads"
+        android:orderInCategory="100" app:showAsAction="never" />
+-->
+
+    <item android:id="@+id/action_rate"
+        android:title="Rate this app"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_about"
+        android:title="About"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_new_identity"
+        android:title="New Identity"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_exit"
+        android:title="Exit"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>

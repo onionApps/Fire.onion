@@ -1,0 +1,3 @@
+Fire.onion uses Tor (http://www.torproject.org) and GeckoView (http://wiki.mozilla.org/Mobile/GeckoView).
+
+Disclaimer: Fire.onion is not affiliated with nor endorsed by The Tor Project and carries no guarantee from The Tor Project about quality, suitability or anything else.

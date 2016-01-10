@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <scale
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="0.5"
+        android:fromYScale="1.0"
+        android:toYScale="0.5"
+        android:fillAfter="true"
+        android:duration="160"
+        android:pivotX = "70%p"
+        android:pivotY = "5%p"
+        />
+
+    <alpha android:fromAlpha="1.0" android:toAlpha="0.0"
+        android:duration="160" />
+
+
+
+
+
+
+
+
+
+        <scale
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="0.75"
+        android:fromYScale="1.0"
+        android:toYScale="0.75"
+        android:fillAfter="true"
+        android:duration="160"
+        android:pivotX = "100%p"
+        android:pivotY = "0%p"
+        />
+    -->
+
+    <!--
+
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="-40%"
+        android:duration="2000" />
+
+    <scale
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="0.9"
+        android:fromYScale="1.0"
+        android:toYScale="1.0"
+        android:fillAfter="true"
+        android:duration="100"
+        android:pivotX = "80%p"
+        android:pivotY = "0%p"
+        />
+    -->
+
+    <!--
+    <scale
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="0.5"
+        android:fromYScale="1.0"
+        android:toYScale="1.0"
+        android:fillAfter="true"
+        android:duration="2000"
+        android:pivotX = "80%p"
+        android:pivotY = "0%p"
+        />
+    <scale
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="1.0"
+        android:fromYScale="1.0"
+        android:toYScale="0.5"
+        android:fillAfter="true"
+        android:duration="2000"
+        android:pivotX = "80%p"
+        android:pivotY = "0%p"
+        />
+    -->
+
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="-30%"
+        android:duration="300" />
+
+    <scale
+        android:fromXScale="1.0"
+        android:toXScale="0.8"
+        android:fromYScale="1.0"
+        android:toYScale="0.9"
+        android:fillAfter="true"
+        android:duration="300"
+        android:pivotX = "80%p"
+        android:pivotY = "0%p"
+        />
+
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:duration="300"
+        />
+
+</set>

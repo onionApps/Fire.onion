@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowFullscreen">true</item>
+
+
+
+
+
+    </style>
+
+
+
+    <!--<style name="TorWebBrowserAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+
+    <!--<style name="TorWebBrowserAppTheme" parent="Theme.AppCompat">-->
+    <style name="TorWebBrowserAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <!--<item name="android:textColorPrimary">#ff0000</item>-->
+
+        <!--<item name="android:windowFullscreen">true</item>-->
+
+
+
+        <!--<item name="actionBarStyle">@style/MyActionBar</item>-->
+
+        <!--<item name="colorControlActivated">#ff9944</item>
+        <item name="colorControlHighlight">#ff9944</item>-->
+
+        <item name="colorControlActivated">#bbbbbb</item>
+        <item name="colorControlHighlight">#bbbbbb</item>
+
+
+        <!--
+        <item name="android:popupAnimationStyle">@style/popup_animation</item>
+
+        <item name="android:popupMenuStyle">@style/popup_animation</item>
+        <item name="popupMenuStyle">@style/popup_animation</item>
+
+        <item name="android:popupBackground">@drawable/bg_menu</item>
+        -->
+
+
+    </style>
+
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textColor">#ff9933</item>
+    </style>
+
+
+
+
+
+
+
+
+    <style name="popup_animation">
+        <!--<item name="android:background">#111</item>-->
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+
+
+</resources>

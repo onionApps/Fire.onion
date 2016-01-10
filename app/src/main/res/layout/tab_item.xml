@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_margin="4dp">
+
+    <!--
+    android:background="#08ffffff"
+    -->
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:background="?selectableItemBackground"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tab_close"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_close_white_36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:background="#000000"
+            android:scaleType="centerCrop"
+            android:layout_width="95dp"
+            android:layout_height="75dp"
+            android:id="@+id/image" />
+
+        <!--
+           <org.mozilla.gecko.widget.ThumbnailView
+               android:id="@+id/thumb"
+               android:layout_width="90dp"
+               android:layout_height="80dp"></org.mozilla.gecko.widget.ThumbnailView>
+       -->
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:paddingLeft="12dp"
+           android:paddingTop="6dp"
+           android:paddingBottom="6dp"
+           android:paddingRight="16dp"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:singleLine="true"
+               android:gravity="left|center_vertical"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:text="Title Bla Bla Bla"
+               android:id="@+id/title" />
+
+           <TextView
+               android:singleLine="true"
+               android:gravity="left|center_vertical"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:textAppearance="?android:attr/textAppearanceSmall"
+               android:text="http://fljawekfaklwjef.onion"
+               android:id="@+id/address" />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

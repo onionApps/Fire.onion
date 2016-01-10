@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_load"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView
+            android:background="?selectableItemBackground"
+            android:id="@+id/download_page_leave"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_navigate_before_white_36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />-->
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Settings"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:background="?selectableItemBackground"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:id="@+id/settings_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAllCaps="true"
+            android:text="Reset" />
+
+        <ImageView
+            android:gravity="center"
+            android:background="?selectableItemBackground"
+            android:id="@+id/page_close"
+            android:padding="16dp"
+            android:src="@drawable/ic_close_white_36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="onion.fire.SettingsFragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="#222"
+        android:id="@+id/settings_restart_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!--
+        <FrameLayout
+            android:background="#888"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></FrameLayout>
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:padding="16dp"
+                android:textColor="#fff"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Restart app to apply changes"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:background="?selectableItemBackground"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:id="@+id/settings_restart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAllCaps="true"
+                android:text="Restart"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
