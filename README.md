@@ -18,7 +18,7 @@ http://onionapps.github.io/Fire.onion/
 ## Features
 - Webbrowser + Tor bundle for Android
 - Completely self-contained
-- No other apps needed
+- No additional apps needed
 - Anonymous web browsing
 - Access to .onion sites
 - Privacy mode always on
