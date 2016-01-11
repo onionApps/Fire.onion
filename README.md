@@ -34,6 +34,7 @@ http://onionapps.github.io/Fire.onion/
 ## Building
 - Download this repository
 - (Optionally replace the included Tor binary with your own)
-- Get Android Studio and open this project
+- (Get Android Studio)
+- Open project
 - Press the run button
 
