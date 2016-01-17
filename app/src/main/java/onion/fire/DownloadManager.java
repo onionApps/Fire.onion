@@ -40,24 +40,28 @@ public class DownloadManager {
     }
 
     private File getExternalDir() {
-        return context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+        File f = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+        Log.i(TAG, "getExternalDir " + f);
+        return f;
     }
 
     private File getInternalDir() {
-        return new File(context.getFilesDir(), "Download");
+        File f = new File(context.getFilesDir(), "Download");
+        Log.i(TAG, "getInternalDir " + f);
+        return f;
     }
 
     private File getDir() {
-        File file;
-        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.KITKAT || !Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-            Log.i(TAG, "getDir: can't write external dir");
-            file = getInternalDir();
-        } else {
-            file = getExternalDir();
-            Log.i(TAG, "getDir: external " + file);
+
+        if(!Settings.getPrefs(context).getBoolean("externalstorage", true)) {
+            return getInternalDir();
         }
-        Log.i(TAG, "getDir: " + file);
-        return file;
+
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.KITKAT || !Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+            return getInternalDir();
+        }
+
+        return getExternalDir();
     }
 
     private ArrayList<Download> downloads = new ArrayList<>();

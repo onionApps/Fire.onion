@@ -83,6 +83,7 @@
         />
     -->
 
+    <!--
     <translate
         android:fromYDelta="0%"
         android:toYDelta="-30%"
@@ -103,6 +104,29 @@
         android:fromAlpha="1.0"
         android:toAlpha="0.0"
         android:duration="300"
+        />
+        -->
+
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="-30%"
+        android:duration="250" />
+
+    <scale
+        android:fromXScale="1.0"
+        android:toXScale="0.8"
+        android:fromYScale="1.0"
+        android:toYScale="0.9"
+        android:fillAfter="true"
+        android:duration="250"
+        android:pivotX = "80%p"
+        android:pivotY = "0%p"
+        />
+
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:duration="250"
         />
 
 </set>

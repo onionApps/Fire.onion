@@ -16,13 +16,6 @@
             />
 
         <CheckBoxPreference
-            android:key="downloads"
-            android:defaultValue="true"
-            android:title="Downloads"
-            android:summary="Opens a dialog if a download is available. If disabled, all downloads are blocked."
-            />
-
-        <CheckBoxPreference
             android:key="mobileuseragent"
             android:defaultValue="false"
             android:title="Mobile User Agent"
@@ -66,6 +59,20 @@
             android:imeOptions="flagNoExtractUi|flagNoFullscreen"
             android:inputType="textUri|textNoSuggestions"
             android:summary="Gets opened when a search query is entered into the address bar."
+            />
+
+        <CheckBoxPreference
+            android:key="downloads"
+            android:defaultValue="true"
+            android:title="Downloads"
+            android:summary="Opens a dialog if a download is available. If disabled, all downloads are blocked."
+            />
+
+        <CheckBoxPreference
+            android:key="externalstorage"
+            android:defaultValue="true"
+            android:title="External Storage"
+            android:summary="Try to write downloads to external storage, if available."
             />
 
     </PreferenceCategory>
