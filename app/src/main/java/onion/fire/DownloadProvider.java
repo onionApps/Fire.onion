@@ -1,7 +1,7 @@
 /*
  * Fire.onion
  *
- * https://play.google.com/store/apps/details?id=onion.fire
+ * http://play.google.com/store/apps/details?id=onion.fire
  * http://onionapps.github.io/Fire.onion/
  * http://github.com/onionApps/Fire.onion
  *
