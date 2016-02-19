@@ -41,8 +41,6 @@ http://onionapps.github.io/Fire.onion/
 
 ## Links
 
-## Links
-
 https://play.google.com/store/apps/details?id=onion.fire
 
 http://onionapps.github.io/Fire.onion/
