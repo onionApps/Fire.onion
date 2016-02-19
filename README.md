@@ -38,3 +38,11 @@ http://onionapps.github.io/Fire.onion/
 - Open project
 - Press the run button
 
+
+## Links
+
+https://play.google.com/store/apps/details?id=onion.fire
+
+http://onionapps.github.io/Fire.onion/
+
+Author: http://github.com/onionApps - jkrnk73uid7p5thz.onion - bitcoin:1kGXfWx8PHZEVriCNkbP5hzD15HS4AyKf
