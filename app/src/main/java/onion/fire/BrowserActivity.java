@@ -53,6 +53,7 @@ import android.widget.Toast;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.mozilla.gecko.EventDispatcher;
+import org.mozilla.gecko.GeckoActivity;
 import org.mozilla.gecko.GeckoAppShell;
 import org.mozilla.gecko.GeckoEvent;
 import org.mozilla.gecko.GeckoView;
@@ -80,7 +81,7 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class BrowserActivity extends ActionBarActivity {
+public class BrowserActivity extends Activity {
 
     static Tor tor;
     static private BrowserActivity instance;
@@ -114,7 +115,7 @@ public class BrowserActivity extends ActionBarActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
 
         skipcleanup = false;
 
@@ -126,13 +127,10 @@ public class BrowserActivity extends ActionBarActivity {
 
         super.onCreate(savedInstanceState);
 
-        final boolean init = getIntent() == null || getIntent().getBooleanExtra("init", true);
+        final boolean init = (getIntent() == null || getIntent().getBooleanExtra("init", true) || tor == null);
 
         if (init) {
             tor = new Tor(this);
-        }
-
-        if (init) {
             cleanup();
         }
 
@@ -645,7 +643,7 @@ public class BrowserActivity extends ActionBarActivity {
     }
 
     @Override
-    protected void onDestroy() {
+    public void onDestroy() {
         if (skipcleanup) {
             Log.i(TAG, "onDestroy skipped");
             super.onDestroy();
@@ -1505,7 +1503,7 @@ public class BrowserActivity extends ActionBarActivity {
     }
 
     @Override
-    protected void onPause() {
+    public void onPause() {
         timer.cancel();
         timer.purge();
         timer = null;
