@@ -29,12 +29,22 @@
             android:summary="Requests websites in your local language."
             />
 
+
         <CheckBoxPreference
             android:key="allowscreenshots"
             android:defaultValue="false"
             android:title="Allow Screenshots"
             android:summary="If enabled, Android may take screenshots automatically and show them on the overview screen."
             />
+
+        <!--
+                <CheckBoxPreference
+                    android:key="allowscreenshots"
+                    android:defaultValue="true"
+                    android:title="Allow Screenshots"
+                    android:summary="If enabled, Android may take screenshots automatically and show them on the overview screen."
+                    />
+                       -->
 
         <CheckBoxPreference
             android:key="webrtc"
