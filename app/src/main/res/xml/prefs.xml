@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
 
@@ -30,148 +32,148 @@
             />
 
 
-        <CheckBoxPreference
-            android:key="allowscreenshots"
-            android:defaultValue="false"
-            android:title="Allow Screenshots"
-            android:summary="If enabled, Android may take screenshots automatically and show them on the overview screen."
-            />
+               <CheckBoxPreference
+                   android:key="allowscreenshots"
+                   android:defaultValue="false"
+                   android:title="Allow Screenshots"
+                   android:summary="If enabled, Android may take screenshots automatically and show them on the overview screen."
+                   />
 
-        <!--
+<!--
+                        <CheckBoxPreference
+                            android:key="allowscreenshots"
+                            android:defaultValue="true"
+                            android:title="Allow Screenshots"
+                            android:summary="If enabled, Android may take screenshots automatically and show them on the overview screen."
+                            />
+-->
+
                 <CheckBoxPreference
-                    android:key="allowscreenshots"
-                    android:defaultValue="true"
-                    android:title="Allow Screenshots"
-                    android:summary="If enabled, Android may take screenshots automatically and show them on the overview screen."
+                    android:key="webrtc"
+                    android:defaultValue="false"
+                    android:title="WebRTC"
+                    android:summary="!!! WARNING: Might leak your IP if enabled !!!"
                     />
-                       -->
 
-        <CheckBoxPreference
-            android:key="webrtc"
-            android:defaultValue="false"
-            android:title="WebRTC"
-            android:summary="!!! WARNING: May leak your IP if enabled !!!"
-            />
+                <EditTextPreference
+                    android:key="homepage"
+                    android:title="Home Page"
+                    android:defaultValue="http://3g2upl4pq6kufc4m.onion/"
+                    android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="textUri|textNoSuggestions"
+                    android:summary="Website to load on startup."
+                    />
 
-        <EditTextPreference
-            android:key="homepage"
-            android:title="Home Page"
-            android:defaultValue="http://3g2upl4pq6kufc4m.onion/"
-            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
-            android:inputType="textUri|textNoSuggestions"
-            android:summary="Website to load on startup."
-            />
+                <EditTextPreference
+                    android:key="searchengine"
+                    android:title="Search Engine"
+                    android:defaultValue="http://3g2upl4pq6kufc4m.onion/?q=%s"
+                    android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="textUri|textNoSuggestions"
+                    android:summary="Gets opened when a search query is entered into the address bar."
+                    />
 
-        <EditTextPreference
-            android:key="searchengine"
-            android:title="Search Engine"
-            android:defaultValue="http://3g2upl4pq6kufc4m.onion/?q=%s"
-            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
-            android:inputType="textUri|textNoSuggestions"
-            android:summary="Gets opened when a search query is entered into the address bar."
-            />
+                <CheckBoxPreference
+                    android:key="downloads"
+                    android:defaultValue="true"
+                    android:title="Downloads"
+                    android:summary="Opens a dialog if a download is available. If disabled, all downloads are blocked."
+                    />
 
-        <CheckBoxPreference
-            android:key="downloads"
-            android:defaultValue="true"
-            android:title="Downloads"
-            android:summary="Opens a dialog if a download is available. If disabled, all downloads are blocked."
-            />
+                <CheckBoxPreference
+                    android:key="externalstorage"
+                    android:defaultValue="true"
+                    android:title="External Storage"
+                    android:summary="Try to write downloads to external storage, if available."
+                    />
 
-        <CheckBoxPreference
-            android:key="externalstorage"
-            android:defaultValue="true"
-            android:title="External Storage"
-            android:summary="Try to write downloads to external storage, if available."
-            />
-
-    </PreferenceCategory>
+            </PreferenceCategory>
 
 
 
 
-    <PreferenceCategory
-        android:title="Tor"
-        >
+            <PreferenceCategory
+                android:title="Tor"
+                >
 
-        <EditTextPreference
-            android:key="exitnodes"
-            android:title="Exit Nodes"
-            android:defaultValue=""
-            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
-            android:inputType="text|textNoSuggestions"
-            android:summary="Last hop country codes / fingerprints / addresses\nExample: {us}\nLeave empty to allow all nodes"
-            />
+                <EditTextPreference
+                    android:key="exitnodes"
+                    android:title="Exit Nodes"
+                    android:defaultValue=""
+                    android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="text|textNoSuggestions"
+                    android:summary="Last hop country codes / fingerprints / addresses\nExample: {us}\nLeave empty to allow all nodes"
+                    />
 
-        <EditTextPreference
-            android:key="entrynodes"
-            android:title="Entry Nodes"
-            android:defaultValue=""
-            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
-            android:inputType="text|textNoSuggestions"
-            android:summary="First hop country codes / fingerprints / addresses"
-            />
+                <EditTextPreference
+                    android:key="entrynodes"
+                    android:title="Entry Nodes"
+                    android:defaultValue=""
+                    android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="text|textNoSuggestions"
+                    android:summary="First hop country codes / fingerprints / addresses"
+                    />
 
-        <EditTextPreference
-            android:key="excludenodes"
-            android:title="Exclude Nodes"
-            android:defaultValue=""
-            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
-            android:inputType="text|textNoSuggestions"
-            android:summary="Excluded country codes / fingerprints / addresses"
-            />
+                <EditTextPreference
+                    android:key="excludenodes"
+                    android:title="Exclude Nodes"
+                    android:defaultValue=""
+                    android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="text|textNoSuggestions"
+                    android:summary="Excluded country codes / fingerprints / addresses"
+                    />
 
-        <CheckBoxPreference
-            android:key="strictnodes"
-            android:title="Strict Nodes"
-            android:defaultValue="false"
-            android:summary="Force node exclusions"
-            />
+                <CheckBoxPreference
+                    android:key="strictnodes"
+                    android:title="Strict Nodes"
+                    android:defaultValue="false"
+                    android:summary="Force node exclusions"
+                    />
 
-        <EditTextPreference
-            android:key="torcustom"
-            android:title="Additional Options"
-            android:defaultValue=""
-            android:imeOptions="flagNoExtractUi|flagNoFullscreen"
-            android:inputType="text|textNoSuggestions|textMultiLine"
-            android:summary="Custom torrc statements"
-            />
+                <EditTextPreference
+                    android:key="torcustom"
+                    android:title="Additional Options"
+                    android:defaultValue=""
+                    android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="text|textNoSuggestions|textMultiLine"
+                    android:summary="Custom torrc statements"
+                    />
 
-        <Preference
-            android:title="Reset Tor"
-            android:key="torwipe"
-            android:summary="Wipe Tor directory and restart"
-            />
+                <Preference
+                    android:title="Reset Tor"
+                    android:key="torwipe"
+                    android:summary="Wipe Tor directory and restart"
+                    />
 
-    </PreferenceCategory>
-
-
-
-
-    <PreferenceCategory
-        android:title="App"
-        >
-
-        <Preference
-            android:title="Rate This App"
-            android:key="rate"
-            android:summary="Help us by rating this app on Google Play!"
-            />
-
-        <Preference
-            android:title="Share This App"
-            android:key="share"
-            android:summary="Help us by sharing this app with your friends!"
-            />
-
-        <Preference
-            android:title="About"
-            android:key="about"
-            />
-
-    </PreferenceCategory>
+            </PreferenceCategory>
 
 
 
 
-</PreferenceScreen>
+            <PreferenceCategory
+                android:title="App"
+                >
+
+                <Preference
+                    android:title="Rate This App"
+                    android:key="rate"
+                    android:summary="Help us by rating this app on Google Play!"
+                    />
+
+                <Preference
+                    android:title="Share This App"
+                    android:key="share"
+                    android:summary="Help us by sharing this app with your friends!"
+                    />
+
+                <Preference
+                    android:title="About"
+                    android:key="about"
+                    />
+
+            </PreferenceCategory>
+
+
+
+
+        </PreferenceScreen>

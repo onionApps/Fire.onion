@@ -56,6 +56,8 @@ public class SettingsFragment extends PreferenceFragment {
         Settings.getPrefs(getActivity());
         addPreferencesFromResource(R.xml.prefs);
 
+
+
         findPreference("webrtc").setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(final Preference preference, Object newValue) {
@@ -127,6 +129,8 @@ public class SettingsFragment extends PreferenceFragment {
                 return true;
             }
         });
+
+
 
     }
 

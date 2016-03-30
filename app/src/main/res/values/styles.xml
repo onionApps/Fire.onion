@@ -1,23 +1,32 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
-
         <item name="android:windowFullscreen">true</item>
-
-
-
-
-
     </style>
 
 
+    <!--
+    <style name="PrefTheme" parent="ThemeOverlay.AppCompat.Dark">
+    </style>
+    -->
+
+    <style name="PrefTheme">
+
+    </style>
 
     <!--<style name="TorWebBrowserAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
 
     <!--<style name="TorWebBrowserAppTheme" parent="Theme.AppCompat">-->
     <style name="TorWebBrowserAppTheme" parent="Theme.AppCompat.NoActionBar">
+
+
+
+
+        <!--<item name="android:windowBackground">@color/background_material_dark</item>
+
+-->
         <!-- Customize your theme here. -->
 
         <!--<item name="android:textColorPrimary">#ff0000</item>-->

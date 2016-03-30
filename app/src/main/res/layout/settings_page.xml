@@ -62,6 +62,22 @@
 
     </LinearLayout>
 
+    <!--
+    <FrameLayout
+        android:theme="@style/PrefTheme"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:theme="@style/PrefTheme"
+            android:id="@+id/settings_fragment"
+            android:name="onion.fire.SettingsFragment"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    -->
+
     <fragment
         android:id="@+id/settings_fragment"
         android:name="onion.fire.SettingsFragment"

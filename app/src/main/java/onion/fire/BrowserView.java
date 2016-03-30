@@ -269,8 +269,6 @@ public class BrowserView extends GeckoView {
         }
 
         return true;
-
-        //return super.onTouchEvent(event);
     }
 
     boolean contextmenu_mousedown = false;
@@ -339,85 +337,36 @@ public class BrowserView extends GeckoView {
         setInputConnectionHandler(null);
     }
 
+    @Override
+    public boolean onKeyPreIme(int i, KeyEvent keyEvent) {
+        log("onKeyPreIme " + i + " " + keyEvent);
+        return super.onKeyPreIme(i, keyEvent);
+    }
+
+    @Override
+    public boolean onKeyDown(int i, KeyEvent event) {
+        log("onKeyDown " + i + " " + event);
+        //return super.onKeyDown(i, event);
+        GeckoAppShell.sendEventToGeckoSync(GeckoEvent.createKeyEvent(event, event.getAction(), 0));
+        return true;
+    }
+
+    @Override
+    public boolean onKeyUp(int i, KeyEvent event) {
+        log("onKeyUp " + i + " " + event);
+        //return super.onKeyUp(i, event);
+        GeckoAppShell.sendEventToGeckoSync(GeckoEvent.createKeyEvent(event, event.getAction(), 0));
+        return true;
+    }
+
+    @Override
+    public boolean onCheckIsTextEditor() {
+        return false;
+    }
 
     @Override
     public InputConnection onCreateInputConnection(EditorInfo outAttrs) {
-
-        log("onCreateInputConnection");
-
-        //outAttrs.makeCompatible(16);
-
-        //super.onCreateInputConnection(outAttrs);
-
-        outAttrs.initialSelStart = -1;
-        outAttrs.initialSelEnd = -1;
-
-        //outAttrs.inputType = InputType.TYPE_TEXT_VARIATION_WEB_EDIT_TEXT;
-
-        outAttrs.inputType = 0;
-
-        outAttrs.imeOptions = EditorInfo.IME_FLAG_NO_EXTRACT_UI | EditorInfo.IME_FLAG_NO_FULLSCREEN;
-
-        //outAttrs.inputType = InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_WEB_EDIT_TEXT | InputType.TYPE_TEXT_FLAG_MULTI_LINE | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
-
-        outAttrs.inputType = InputType.TYPE_CLASS_TEXT | android.text.InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD | InputType.TYPE_TEXT_FLAG_MULTI_LINE | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
-
-        if (!allowInput) {
-            return null;
-        }
-
-        return new BaseInputConnection(this, false) {
-
-            // backspace fix?
-            @Override
-            public boolean deleteSurroundingText(int beforeLength, int afterLength) {
-                if (beforeLength == 1 && afterLength == 0) {
-                    log("deleteSurroundingText backspace fix");
-                    return sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DEL))
-                            && sendKeyEvent(new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_DEL));
-                }
-                log("deleteSurroundingText dispatch");
-                return super.deleteSurroundingText(beforeLength, afterLength);
-            }
-
-            @Override
-            public boolean sendKeyEvent(KeyEvent event) {
-                //boolean ret = super.sendKeyEvent(event);
-                //boolean ret = BrowserView.this.dispatchKeyEvent(event);
-                log("sendKeyEvent dispatch " + event);
-                GeckoAppShell.sendEventToGecko(GeckoEvent.createKeyEvent(event, event.getAction(), 0));
-                return true;
-            }
-
-            @Override
-            public boolean setSelection(int start, int end) {
-                log("setSelection " + start + " " + end);
-                return super.setSelection(start, end);
-                //return true;
-            }
-
-            @Override
-            public boolean performEditorAction(int actionCode) {
-                log("performEditorAction " + actionCode);
-                return super.performEditorAction(actionCode);
-            }
-
-            @Override
-            public boolean performPrivateCommand(String action, Bundle data) {
-                log("performPrivateCommand " + action + " " + data);
-                return super.performPrivateCommand(action, data);
-            }
-
-            @Override
-            public boolean commitText(CharSequence text, int newCursorPosition) {
-                log("commitText " + text + " " + newCursorPosition);
-                return super.commitText(text, newCursorPosition);
-            }
-        };
-
+        return null;
     }
-
-
-
 
 }

@@ -81,7 +81,7 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class BrowserActivity extends Activity {
+public class BrowserActivity extends ActionBarActivity {
 
     static Tor tor;
     static private BrowserActivity instance;
